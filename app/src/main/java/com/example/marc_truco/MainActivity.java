@@ -8,25 +8,30 @@ import android.widget.CheckBox;
 
 public class MainActivity extends AppCompatActivity {
 
+    //criando os botoes da tela
+    private CheckBox pt1;
+
+    //inicializando os elementos da tela
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        this.pt1 =  findViewById(R.id.Ponto1_1);
+
     }
 
 
 
 
    public void Onclick(View v){
-       final CheckBox box1 =  findViewById(R.id.Ponto1_1);
-       box1.setOnClickListener(new View.OnClickListener(){
-
+        pt1.setOnClickListener(new View.OnClickListener(){
            @Override
            public void onClick(View v) {
-               box1.setVisibility(View.VISIBLE);
+               pt1.setVisibility(View.VISIBLE);
            }
 
-       });
+        });
    }
 
 }

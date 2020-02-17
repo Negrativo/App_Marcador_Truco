@@ -7,73 +7,73 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-    <CheckBox
+    <RadioGroup
         android:id="@+id/PontoTento1_1"
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="76dp"
+        android:layout_marginLeft="76dp"
         android:layout_marginTop="600dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="76dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/PontoTento1_2"
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="105dp"
+        android:layout_marginLeft="105dp"
         android:layout_marginTop="648dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="105dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/PontoTento1_3"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="137dp"
+        android:layout_marginLeft="137dp"
         android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/PontoTento2_3"
         app:layout_constraintEnd_toStartOf="@+id/PontoTento2_3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/PontoTento2_3"
-        android:layout_marginRight="91dp"
-        android:layout_marginLeft="137dp" />
+        app:layout_constraintTop_toTopOf="@+id/PontoTento2_3" />
 
     <CheckBox
         android:id="@+id/PontoTento2_1"
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="316dp"
+        android:layout_marginLeft="316dp"
         android:layout_marginTop="600dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="316dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/PontoTento2_2"
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="292dp"
+        android:layout_marginLeft="292dp"
         android:layout_marginTop="648dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="292dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/PontoTento2_3"
@@ -81,6 +81,7 @@
         android:layout_height="29dp"
         android:layout_marginTop="9dp"
         android:layout_marginEnd="119dp"
+        android:layout_marginRight="119dp"
         android:layout_marginBottom="16dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
@@ -88,8 +89,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/PontoTento1_3"
-        app:layout_constraintTop_toBottomOf="@+id/PontoTento2_2"
-        android:layout_marginRight="119dp" />
+        app:layout_constraintTop_toBottomOf="@+id/PontoTento2_2" />
 
     <CheckBox
         android:id="@+id/Ponto2_1"
@@ -220,53 +220,53 @@
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="340dp"
+        android:layout_marginLeft="340dp"
         android:layout_marginTop="424dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="invisible"
-        android:layout_marginLeft="340dp" />
+        tools:visibility="invisible" />
 
     <CheckBox
         android:id="@+id/Ponto2_9"
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="340dp"
+        android:layout_marginLeft="340dp"
         android:layout_marginTop="468dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="340dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/Ponto2_10"
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="340dp"
+        android:layout_marginLeft="340dp"
         android:layout_marginTop="512dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="340dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/Ponto2_11"
         android:layout_width="32dp"
         android:layout_height="29dp"
         android:layout_marginStart="340dp"
+        android:layout_marginLeft="340dp"
         android:layout_marginTop="556dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="340dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/Ponto1_1"
@@ -282,7 +282,7 @@
         android:clickable="true"
         android:focusable="true"
         android:onClick="Onclick"
-        android:visibility="invisible"
+        android:visibility="visible"
         app:layout_constraintEnd_toStartOf="@+id/Ponto2_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -302,8 +302,10 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/Ponto1_3"
         app:layout_constraintEnd_toStartOf="@+id/Ponto2_2"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <CheckBox
         android:id="@+id/Ponto1_3"
@@ -400,52 +402,52 @@
         android:layout_width="31dp"
         android:layout_height="31dp"
         android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
         android:layout_marginTop="424dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="48dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/Ponto1_9"
         android:layout_width="31dp"
         android:layout_height="31dp"
         android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
         android:layout_marginTop="468dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="48dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/Ponto1_10"
         android:layout_width="31dp"
         android:layout_height="31dp"
         android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
         android:layout_marginTop="512dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="48dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
         android:id="@+id/Ponto1_11"
         android:layout_width="31dp"
         android:layout_height="31dp"
         android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
         android:layout_marginTop="556dp"
         android:button="@android:drawable/progress_horizontal"
         android:checked="true"
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginLeft="48dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
