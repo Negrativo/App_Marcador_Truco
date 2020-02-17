@@ -18,6 +18,7 @@
         android:checkedButton="@id/PontoTento1_1"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/groupTento2"
         app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
@@ -45,15 +46,20 @@
 
     <RadioGroup
         android:id="@+id/groupTento2"
-        android:layout_width="108dp"
-        android:layout_height="128dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="109dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="6dp"
         android:checkedButton="@id/PontoTento2_1"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/groupTento1"
+        app:layout_constraintTop_toBottomOf="@+id/groupPontos2">
 
         <RadioButton
             android:id="@+id/PontoTento2_1"
@@ -82,11 +88,14 @@
         android:id="@+id/groupPontos2"
         android:layout_width="45dp"
         android:layout_height="474dp"
-        android:layout_marginTop="110dp"
+        android:layout_marginStart="249dp"
+        android:layout_marginLeft="249dp"
         android:layout_marginEnd="33dp"
         android:layout_marginRight="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/groupPontos1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintStart_toEndOf="@+id/groupPontos1"
+        app:layout_constraintTop_toTopOf="@+id/groupPontos1">
 
         <RadioButton
             android:id="@+id/Ponto2_1"
@@ -169,14 +178,11 @@
 
     <RadioGroup
         android:id="@+id/groupPontos1"
-        android:layout_width="46dp"
-        android:layout_height="493dp"
-        android:layout_marginStart="33dp"
-        android:layout_marginLeft="33dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="239dp"
-        android:layout_marginRight="239dp"
-        android:layout_marginBottom="11dp"
+        android:layout_width="44dp"
+        android:layout_height="474dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="116dp"
         app:layout_constraintBottom_toTopOf="@+id/groupTento1"
         app:layout_constraintEnd_toStartOf="@+id/groupPontos2"
         app:layout_constraintStart_toStartOf="parent"
