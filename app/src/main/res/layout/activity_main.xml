@@ -7,447 +7,262 @@
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
+
     <RadioGroup
-        android:id="@+id/PontoTento1_1"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
-        android:layout_marginTop="600dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/PontoTento1_2"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginLeft="105dp"
-        android:layout_marginTop="648dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/PontoTento1_3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="137dp"
-        android:layout_marginLeft="137dp"
-        android:layout_marginEnd="91dp"
-        android:layout_marginRight="91dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/PontoTento2_3"
-        app:layout_constraintEnd_toStartOf="@+id/PontoTento2_3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/PontoTento2_3" />
-
-    <CheckBox
-        android:id="@+id/PontoTento2_1"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="316dp"
-        android:layout_marginLeft="316dp"
-        android:layout_marginTop="600dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/PontoTento2_2"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="292dp"
-        android:layout_marginLeft="292dp"
-        android:layout_marginTop="648dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/PontoTento2_3"
-        android:layout_width="0dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="9dp"
-        android:layout_marginEnd="119dp"
-        android:layout_marginRight="119dp"
-        android:layout_marginBottom="16dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
+        android:id="@+id/groupTento1"
+        android:layout_width="107dp"
+        android:layout_height="126dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="4dp"
+        android:checkedButton="@id/PontoTento1_1"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/PontoTento1_3"
-        app:layout_constraintTop_toBottomOf="@+id/PontoTento2_2" />
+        app:layout_constraintStart_toStartOf="parent">
 
-    <CheckBox
-        android:id="@+id/Ponto2_1"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginRight="49dp"
-        android:layout_marginBottom="15dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto2_2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/PontoTento1_1"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_2"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="49dp"
-        android:layout_marginRight="49dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/PontoTento1_2"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_3"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="15dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto2_4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/PontoTento1_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_4"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupTento2"
+        android:layout_width="108dp"
+        android:layout_height="128dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="4dp"
+        android:checkedButton="@id/PontoTento2_1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <RadioButton
+            android:id="@+id/PontoTento2_1"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/PontoTento2_2"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/PontoTento2_3"
+            android:layout_width="30dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupPontos2"
+        android:layout_width="45dp"
+        android:layout_height="474dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/Ponto2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupPontos1"
+        android:layout_width="46dp"
+        android:layout_height="493dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="239dp"
+        android:layout_marginRight="239dp"
         android:layout_marginBottom="11dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto2_5"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/groupTento1"
+        app:layout_constraintEnd_toStartOf="@+id/groupPontos2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <CheckBox
-        android:id="@+id/Ponto2_5"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="15dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto2_6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_6"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="15dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto2_7"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_7"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="380dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:layout_marginBottom="15dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto2_8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal"
+            android:checked="true" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_8"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="424dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="invisible" />
+        <RadioButton
+            android:id="@+id/Ponto1_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal"
+            android:checked="true" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_9"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="468dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_10"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="512dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto2_11"
-        android:layout_width="32dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginLeft="340dp"
-        android:layout_marginTop="556dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto1_1"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="false"
-        android:clickable="true"
-        android:focusable="true"
-        android:onClick="Onclick"
-        android:visibility="visible"
-        app:layout_constraintEnd_toStartOf="@+id/Ponto2_1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto1_2"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="164dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:layout_marginBottom="13dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto1_3"
-        app:layout_constraintEnd_toStartOf="@+id/Ponto2_2"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        <RadioButton
+            android:id="@+id/Ponto1_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto1_3"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:layout_marginBottom="13dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto1_4"
-        app:layout_constraintEnd_toStartOf="@+id/Ponto2_3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto1_4"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="252dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:layout_marginBottom="9dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto1_5"
-        app:layout_constraintEnd_toStartOf="@+id/Ponto2_4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto1_5"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="292dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:layout_marginBottom="13dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto1_6"
-        app:layout_constraintEnd_toStartOf="@+id/Ponto2_5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <RadioButton
+            android:id="@+id/Ponto1_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
 
-    <CheckBox
-        android:id="@+id/Ponto1_6"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="336dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:layout_marginBottom="13dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto1_7"
-        app:layout_constraintEnd_toStartOf="@+id/Ponto2_6"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </RadioGroup>
 
-    <CheckBox
-        android:id="@+id/Ponto1_7"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="380dp"
-        android:layout_marginEnd="261dp"
-        android:layout_marginRight="261dp"
-        android:layout_marginBottom="13dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/Ponto1_8"
-        app:layout_constraintEnd_toStartOf="@+id/Ponto2_7"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/Ponto1_8"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="424dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/Ponto1_9"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="468dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/Ponto1_10"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="512dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <CheckBox
-        android:id="@+id/Ponto1_11"
-        android:layout_width="31dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="556dp"
-        android:button="@android:drawable/progress_horizontal"
-        android:checked="true"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
