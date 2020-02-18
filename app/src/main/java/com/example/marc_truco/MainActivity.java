@@ -5,10 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 public class MainActivity extends AppCompatActivity {
 
     //criando os botoes da tela
+     RadioGroup groupTento1;
+
      RadioButton pt1_1;
      RadioButton pt1_2;
      RadioButton pt1_3;

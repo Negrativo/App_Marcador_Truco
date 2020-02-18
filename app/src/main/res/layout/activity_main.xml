@@ -1,192 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<AbsoluteLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".MainActivity">
 
-
-    <RadioGroup
-        android:id="@+id/groupTento1"
-        android:layout_width="107dp"
-        android:layout_height="126dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginLeft="64dp"
-        android:layout_marginBottom="4dp"
-        android:checkedButton="@id/PontoTento1_1"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/groupTento2"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <RadioButton
-            android:id="@+id/PontoTento1_1"
-            android:layout_width="32dp"
-            android:layout_height="29dp"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/PontoTento1_2"
-            android:layout_width="32dp"
-            android:layout_height="29dp"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/PontoTento1_3"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/groupTento2"
-        android:layout_width="109dp"
-        android:layout_height="124dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginRight="51dp"
-        android:layout_marginBottom="6dp"
-        android:checkedButton="@id/PontoTento2_1"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/groupTento1"
-        app:layout_constraintTop_toBottomOf="@+id/groupPontos2">
-
-        <RadioButton
-            android:id="@+id/PontoTento2_1"
-            android:layout_width="32dp"
-            android:layout_height="29dp"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/PontoTento2_2"
-            android:layout_width="32dp"
-            android:layout_height="29dp"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/PontoTento2_3"
-            android:layout_width="30dp"
-            android:layout_height="29dp"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-    </RadioGroup>
-
-    <RadioGroup
-        android:id="@+id/groupPontos2"
-        android:layout_width="45dp"
-        android:layout_height="474dp"
-        android:layout_marginStart="249dp"
-        android:layout_marginLeft="249dp"
-        android:layout_marginEnd="33dp"
-        android:layout_marginRight="33dp"
-        app:layout_constraintBottom_toBottomOf="@+id/groupPontos1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/groupPontos1"
-        app:layout_constraintTop_toTopOf="@+id/groupPontos1">
-
-        <RadioButton
-            android:id="@+id/Ponto2_1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_9"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_10"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-        <RadioButton
-            android:id="@+id/Ponto2_11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:button="@android:drawable/progress_horizontal" />
-
-    </RadioGroup>
-
     <RadioGroup
         android:id="@+id/groupPontos1"
-        android:layout_width="44dp"
-        android:layout_height="474dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="116dp"
-        app:layout_constraintBottom_toTopOf="@+id/groupTento1"
-        app:layout_constraintEnd_toStartOf="@+id/groupPontos2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_width="58dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginBottom="139dp"
+        android:layout_x="32dp"
+        android:layout_y="114dp">
 
 
         <RadioButton
@@ -270,5 +100,166 @@
 
     </RadioGroup>
 
+    <RadioGroup
+        android:id="@+id/groupTento1"
+        android:layout_width="64dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginBottom="15dp"
+        android:layout_x="74dp"
+        android:layout_y="599dp"
+        android:checkedButton="@id/PontoTento1_1"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <RadioButton
+            android:id="@+id/PontoTento1_1"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/PontoTento1_2"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/PontoTento1_3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupPontos2"
+        android:layout_width="52dp"
+        android:layout_height="480dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_x="323dp"
+        android:layout_y="111dp">
+
+        <RadioButton
+            android:id="@+id/Ponto2_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/Ponto2_11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/groupTento2"
+        android:layout_width="64dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="253dp"
+        android:layout_marginLeft="253dp"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginBottom="13dp"
+        android:layout_x="254dp"
+        android:layout_y="608dp"
+        android:checkedButton="@id/PontoTento2_1"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/PontoTento2_1"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/PontoTento2_2"
+            android:layout_width="32dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+        <RadioButton
+            android:id="@+id/PontoTento2_3"
+            android:layout_width="30dp"
+            android:layout_height="29dp"
+            android:layout_weight="1"
+            android:button="@android:drawable/progress_horizontal" />
+
+    </RadioGroup>
+
+
+</AbsoluteLayout>
