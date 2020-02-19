@@ -15,4 +15,9 @@
     <string name="time1">Time 1</string>
     <string name="time2">Time 2</string>
     <string name="tentos">Tentos</string>
+    <string name="opcoes">Opções</string>
+    <string name="ajuda">Ajuda</string>
+    <string name="marcadores">Marcadores</string>
+    <string name="fisico">Fisico</string>
+    <string name="digital">Digital</string>
 </resources>
