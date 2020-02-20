@@ -7,59 +7,40 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
+public class Creditos extends AppCompatActivity {
 
-public class MainActivity extends AppCompatActivity {
-
-
-
-
-
-    //inicializando os elementos da tela
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        //criando os botoes da tela
-        //MenuItem trocaM = findViewById(R.id.marc_dig);
-
-
-
-
+        setContentView(R.layout.activity_creditos);
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {  //para implementar os itens no codigo para manipular
+    public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menubar, menu);
 
-         /*
-        MenuItem trocaM;
-        trocaM.setOnMenuItemClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, marcador_digital.class);
-                startActivity(intent);
-            }
-        });
+        /*
+        MenuItem cred = findViewById(R.id.creditos);
+        MenuItem ajuda = findViewById(R.id.ajuda);
+        MenuItem marc_dig = findViewById(R.id.marc_dig);
+        MenuItem marc_fis = findViewById(R.id.marc_fis);
+
          */
-
         return true;
-
-
     }
+
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
+            case R.id.marc_fis:
+                Intent intent1 = new Intent(this, MainActivity.class);
+                this.startActivity(intent1);
+                break;
             case R.id.marc_dig:
                 Intent intent2 = new Intent(this, marcador_digital.class);
                 this.startActivity(intent2);
-                break;
-            case R.id.cred:
-                Intent intent3 = new Intent(this, Creditos.class);
-                this.startActivity(intent3);
                 break;
             case R.id.help:
                 Intent intent4 = new Intent(this, ajuda.class);
@@ -70,5 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 
 }

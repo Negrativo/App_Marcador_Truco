@@ -17,11 +17,11 @@
     </item>
 
     <item
-        android:id="@+id/creditos"
+        android:id="@+id/cred"
         android:title="@string/creditos" />
 
     <item
-        android:id="@+id/ajuda"
+        android:id="@+id/help"
         android:icon="@android:drawable/btn_dialog"
         android:title="@string/ajuda" />
 

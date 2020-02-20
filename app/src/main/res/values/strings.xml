@@ -21,4 +21,14 @@
     <string name="fisico">Fisico</string>
     <string name="digital">Digital</string>
     <string name="creditos">créditos</string>
+    <string name="truco">Truco</string>
+    <string name="avalie">Avalie</string>
+    <string name="bttruco_lay_ajuda">Pontuações do truco</string>
+    <string name="btdimi_lay_ajuda">Diminuir pontuação</string>
+    <string name="btadc_lay_ajuda">Adicionar pontuação</string>
+    <string name="pontos_lay_ajuda">Pontuação do jogo</string>
+    <string name="ponts_fis_ajuda">clicar na pontuação</string>
+    <string name="ptstentos">clicar na pontuação dos tentos</string>
+    <string name="tutorial_marcdor_digital">tutorial_marcdor_digital</string>
+    <string name="tutorial_marcdor_fisico">tutorial_marcdor_fisico</string>
 </resources>

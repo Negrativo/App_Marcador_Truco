@@ -1,7 +1,9 @@
 package com.example.marc_truco;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,16 +18,12 @@ public class marcador_digital extends AppCompatActivity {
     private Button btpont1;
     private Button btpont2;
 
-    private Button btmenos1;
-    private Button btmenos2;
-
-    private Button bt_truco;
-
     private EditText pontos1;
     private EditText pontos2;
 
-    private int total1;
+    /*private int total1;
     private int total2;
+     */
 
     //------------------------------------------------------------//
     //Barra de Menu
@@ -41,9 +39,9 @@ public class marcador_digital extends AppCompatActivity {
         //mapeando eles a partir das referencias dos componentes xml
         btpont1 = findViewById(R.id.bt_add_pont1);
         btpont2 = findViewById(R.id.bt_add_pont2);
-        btmenos1 = findViewById(R.id.bt_menos1);
-        btmenos2 = findViewById(R.id.bt_menos2);
-        bt_truco = findViewById(R.id.bt_truco);
+        Button btmenos1 = findViewById(R.id.bt_menos1);
+        Button btmenos2 = findViewById(R.id.bt_menos2);
+        Button bt_truco = findViewById(R.id.bt_truco);
         pontos1 = findViewById(R.id.pontos1);
         pontos2 = findViewById(R.id.pontos2);
 
@@ -61,7 +59,7 @@ public class marcador_digital extends AppCompatActivity {
                 pontos = (Integer.parseInt(pontos1.getText().toString())); //passando valor txtEdit para variavel
                 btpontos = (Integer.parseInt(btpont1.getText().toString())); //passando valor do botao para variavel
                 if (pontos >= 12){
-                    pontos = 1;
+                    pontos = 0;
                 }else
                     if(pontos <= 11) {
                     pontos = pontos + btpontos;  //acressenta pontuação a partir do valor do botao
@@ -80,7 +78,7 @@ public class marcador_digital extends AppCompatActivity {
                 pontos = (Integer.parseInt(pontos2.getText().toString())); //passando valor txtEdit para variavel
                 btpontos = (Integer.parseInt(btpont2.getText().toString())); //passando valor do botao para variavel
                 if (pontos >= 12){
-                    pontos = 1;
+                    pontos = 0;
                 }else
                     if(pontos <= 11) {
                     pontos = pontos + btpontos; //acressenta pontuação a partir do valor do botao
@@ -169,22 +167,37 @@ public class marcador_digital extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menubar, menu);
 
+        /*
         MenuItem cred = findViewById(R.id.creditos);
         MenuItem ajuda = findViewById(R.id.ajuda);
         MenuItem marc_dig = findViewById(R.id.marc_dig);
         MenuItem marc_fis = findViewById(R.id.marc_fis);
 
-        /*
-        MenuItem cred = menu.add(0,0,0,"Creditos");
-        MenuItem ajuda = menu.add(0,1,1,"Ajuda");
-        MenuItem marc_dig = menu.add(0,2,2,"Digital");
-        MenuItem marc_fis = menu.add(0,3,3,"Fisico");
          */
-
-
-        return true;
+            return true;
     }
 
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.marc_fis:
+                Intent intentfis = new Intent(this, MainActivity.class);
+                this.startActivity(intentfis);
+                break;
+            case R.id.cred:
+                Intent intent3 = new Intent(this, Creditos.class);
+                this.startActivity(intent3);
+                break;
+            case R.id.help:
+                Intent intent4 = new Intent(this, ajuda.class);
+                this.startActivity(intent4);
+                break;
+        }
+
+
+        return super.onOptionsItemSelected(item);
+    }
 
 
 }
