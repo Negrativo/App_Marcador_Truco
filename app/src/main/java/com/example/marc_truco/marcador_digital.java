@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 
 public class marcador_digital extends AppCompatActivity {
@@ -20,6 +21,9 @@ public class marcador_digital extends AppCompatActivity {
 
     private EditText pontos1;
     private EditText pontos2;
+
+    private TextView tentos1;
+    private TextView tentos2;
 
     /*private int total1;
     private int total2;
@@ -44,6 +48,8 @@ public class marcador_digital extends AppCompatActivity {
         Button bt_truco = findViewById(R.id.bt_truco);
         pontos1 = findViewById(R.id.pontos1);
         pontos2 = findViewById(R.id.pontos2);
+        tentos1 = findViewById(R.id.tentos1);
+        tentos2 = findViewById(R.id.tentos2);
 
         //referenciando itens de menu
 
@@ -56,10 +62,14 @@ public class marcador_digital extends AppCompatActivity {
             public void onClick(View v) {
                 int pontos;
                 int btpontos;
+                int tento;
                 pontos = (Integer.parseInt(pontos1.getText().toString())); //passando valor txtEdit para variavel
                 btpontos = (Integer.parseInt(btpont1.getText().toString())); //passando valor do botao para variavel
                 if (pontos >= 12){
                     pontos = 0;
+                    tento = (Integer.parseInt(tentos1.getText().toString()));
+                    tento = tento+1;
+                    tentos1.setText(String.valueOf(tento));
                 }else
                     if(pontos <= 11) {
                     pontos = pontos + btpontos;  //acressenta pontuação a partir do valor do botao
@@ -75,10 +85,14 @@ public class marcador_digital extends AppCompatActivity {
             public void onClick(View v) {
                 int pontos;
                 int btpontos;
+                int tento;
                 pontos = (Integer.parseInt(pontos2.getText().toString())); //passando valor txtEdit para variavel
                 btpontos = (Integer.parseInt(btpont2.getText().toString())); //passando valor do botao para variavel
                 if (pontos >= 12){
                     pontos = 0;
+                    tento = (Integer.parseInt(tentos2.getText().toString()));
+                    tento = tento+1;
+                    tentos2.setText(String.valueOf(tento));
                 }else
                     if(pontos <= 11) {
                     pontos = pontos + btpontos; //acressenta pontuação a partir do valor do botao
