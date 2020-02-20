@@ -3,13 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/opcoes"
-        android:title="@string/opcoes" />
-    <item
-        android:id="@+id/ajuda"
-        android:icon="@android:drawable/btn_dialog"
-        android:title="@string/ajuda" />
-    <item
         android:id="@+id/marcadores"
         android:title="@string/marcadores">
         <!-- itens submenu -->
@@ -22,4 +15,14 @@
                 android:title="@string/digital" />
         </menu>
     </item>
+
+    <item
+        android:id="@+id/creditos"
+        android:title="@string/creditos" />
+
+    <item
+        android:id="@+id/ajuda"
+        android:icon="@android:drawable/btn_dialog"
+        android:title="@string/ajuda" />
+
 </menu>
