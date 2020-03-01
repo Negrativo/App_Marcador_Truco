@@ -53,7 +53,7 @@ public class marcador_digital extends AppCompatActivity {
 
         //referenciando itens de menu
 
-
+        //só commitando pra fala que tenho commit aqui, coommit 2
 
 
         //adicionando função ao botao de pontuação para time 1
