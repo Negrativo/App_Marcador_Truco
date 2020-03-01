@@ -76,6 +76,8 @@ public class marcador_digital extends AppCompatActivity {
 
                 tentos1.setText(String.valueOf(tento));
                 pontos1.setText(String.valueOf(pontos));
+                btpont1.setText(String.valueOf(1));
+                btpont2.setText(String.valueOf(1));
             }
         });
 
@@ -99,6 +101,8 @@ public class marcador_digital extends AppCompatActivity {
 
                 tentos2.setText(String.valueOf(tento));
                 pontos2.setText(String.valueOf(pontos));
+                btpont1.setText(String.valueOf(1));
+                btpont2.setText(String.valueOf(1));
             }
         });
 
