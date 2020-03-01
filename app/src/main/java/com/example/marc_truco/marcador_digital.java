@@ -65,16 +65,16 @@ public class marcador_digital extends AppCompatActivity {
                 int tento;
                 pontos = (Integer.parseInt(pontos1.getText().toString())); //passando valor txtEdit para variavel
                 btpontos = (Integer.parseInt(btpont1.getText().toString())); //passando valor do botao para variavel
-                if (pontos >= 12){
-                    pontos = 0;
-                    tento = (Integer.parseInt(tentos1.getText().toString()));
-                    tento = tento+1;
-                    tentos1.setText(String.valueOf(tento));
-                }else
-                    if(pontos <= 11) {
-                    pontos = pontos + btpontos;  //acressenta pontuação a partir do valor do botao
-                    }
+                tento = (Integer.parseInt(tentos1.getText().toString()));
 
+                pontos = pontos + btpontos;//acressenta pontuação a partir do valor do botao
+
+                if (pontos >= 13){
+                    pontos = 0;
+                    tento = tento+1;
+                }
+
+                tentos1.setText(String.valueOf(tento));
                 pontos1.setText(String.valueOf(pontos));
             }
         });
@@ -88,16 +88,16 @@ public class marcador_digital extends AppCompatActivity {
                 int tento;
                 pontos = (Integer.parseInt(pontos2.getText().toString())); //passando valor txtEdit para variavel
                 btpontos = (Integer.parseInt(btpont2.getText().toString())); //passando valor do botao para variavel
-                if (pontos >= 12){
+                tento = (Integer.parseInt(tentos2.getText().toString()));
+
+                pontos = pontos + btpontos;//acressenta pontuação a partir do valor do botao
+
+                    if (pontos >= 13){
                     pontos = 0;
-                    tento = (Integer.parseInt(tentos2.getText().toString()));
                     tento = tento+1;
-                    tentos2.setText(String.valueOf(tento));
-                }else
-                    if(pontos <= 11) {
-                    pontos = pontos + btpontos; //acressenta pontuação a partir do valor do botao
                     }
 
+                tentos2.setText(String.valueOf(tento));
                 pontos2.setText(String.valueOf(pontos));
             }
         });

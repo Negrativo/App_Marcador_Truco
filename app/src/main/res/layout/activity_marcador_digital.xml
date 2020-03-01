@@ -11,11 +11,12 @@
         android:id="@+id/marca_truco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="36dp"
         android:text="@string/marcador_truco"
         android:textColor="#FFFFFF"
         android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.588"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,30 +24,40 @@
         android:id="@+id/bt_add_pont1"
         android:layout_width="130dp"
         android:layout_height="70dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+
         android:layout_marginBottom="15dp"
         android:background="@drawable/marcador_pontos2"
         android:text="1"
-
         android:textColor="#ffffff"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_truco"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toStartOf="@+id/bt_add_pont2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pontos1" />
 
     <Button
         android:id="@+id/bt_add_pont2"
         android:layout_width="130dp"
         android:layout_height="70dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
         android:layout_marginBottom="15dp"
         android:background="@drawable/marcador_pontos1"
         android:text="1"
         android:textColor="#ffffff"
         android:textSize="50sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_truco"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_add_pont1"
+        app:layout_constraintTop_toBottomOf="@+id/pontos2" />
 
     <Button
         android:id="@+id/bt_truco"
@@ -56,7 +67,7 @@
         android:layout_marginLeft="165dp"
         android:layout_marginEnd="165dp"
         android:layout_marginRight="165dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginBottom="40dp"
         android:background="@android:color/background_dark"
         android:text="@string/truco"
         android:textColor="#ffffff"
@@ -69,12 +80,17 @@
         android:id="@+id/pontos1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
         android:text="0"
         android:textColor="#999999"
         android:textSize="120sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_add_pont1"
+        app:layout_constraintEnd_toStartOf="@+id/pontos2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/marca_truco" />
 
@@ -82,25 +98,33 @@
         android:id="@+id/pontos2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
         android:layout_marginTop="30dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginRight="80dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:layout_marginBottom="20dp"
         android:text="0"
         android:textColor="#999999"
         android:textSize="120sp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_add_pont2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pontos1"
         app:layout_constraintTop_toBottomOf="@+id/marca_truco" />
 
     <Button
         android:id="@+id/bt_menos1"
         android:layout_width="55dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="60dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/botao_menos"
         app:layout_constraintBottom_toTopOf="@+id/bt_add_pont1"
+        app:layout_constraintEnd_toStartOf="@+id/bt_menos2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pontos1" />
 
@@ -108,13 +132,16 @@
         android:id="@+id/bt_menos2"
         android:layout_width="55dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
         android:layout_marginTop="60dp"
-        android:layout_marginEnd="60dp"
-        android:layout_marginRight="60dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginRight="80dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/botao_menos"
         app:layout_constraintBottom_toTopOf="@+id/bt_add_pont2"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_menos1"
         app:layout_constraintTop_toBottomOf="@+id/pontos2" />
 
     <TextView
@@ -135,14 +162,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginLeft="100dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:text="0"
         android:textColor="#ffffff"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/pontos1"
         app:layout_constraintEnd_toStartOf="@+id/tentos2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marca_truco" />
 
     <TextView
         android:id="@+id/tentos2"
@@ -150,13 +178,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
         android:layout_marginEnd="100dp"
         android:layout_marginRight="100dp"
         android:text="0"
         android:textColor="#ffffff"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/pontos2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tentos1" />
+        app:layout_constraintStart_toEndOf="@+id/tentos1"
+        app:layout_constraintTop_toBottomOf="@+id/marca_truco" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
