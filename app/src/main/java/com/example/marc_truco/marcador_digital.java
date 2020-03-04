@@ -63,19 +63,23 @@ public class marcador_digital extends AppCompatActivity {
                 int pontos;
                 int btpontos;
                 int tento;
+                int pontostwo;
                 pontos = (Integer.parseInt(pontos1.getText().toString())); //passando valor txtEdit para variavel
                 btpontos = (Integer.parseInt(btpont1.getText().toString())); //passando valor do botao para variavel
                 tento = (Integer.parseInt(tentos1.getText().toString()));
+                pontostwo = (Integer.parseInt(pontos2.getText().toString())); //txtEdit time 2
 
                 pontos = pontos + btpontos;//acressenta pontuação a partir do valor do botao
 
-                if (pontos >= 13){
+                if (pontos >= 12){
                     pontos = 0;
+                    pontostwo = 0;
                     tento = tento+1;
                 }
 
                 tentos1.setText(String.valueOf(tento));
                 pontos1.setText(String.valueOf(pontos));
+                pontos2.setText(String.valueOf(pontostwo));
                 btpont1.setText(String.valueOf(1));
                 btpont2.setText(String.valueOf(1));
             }
@@ -88,19 +92,23 @@ public class marcador_digital extends AppCompatActivity {
                 int pontos;
                 int btpontos;
                 int tento;
+                int pontostwo;
                 pontos = (Integer.parseInt(pontos2.getText().toString())); //passando valor txtEdit para variavel
                 btpontos = (Integer.parseInt(btpont2.getText().toString())); //passando valor do botao para variavel
                 tento = (Integer.parseInt(tentos2.getText().toString()));
+                pontostwo = (Integer.parseInt(pontos1.getText().toString())); //txtEdit time 2
 
                 pontos = pontos + btpontos;//acressenta pontuação a partir do valor do botao
 
-                    if (pontos >= 13){
+                    if (pontos >= 12){
                     pontos = 0;
+                    pontostwo = 0;
                     tento = tento+1;
                     }
 
                 tentos2.setText(String.valueOf(tento));
                 pontos2.setText(String.valueOf(pontos));
+                pontos1.setText(String.valueOf(pontostwo));
                 btpont1.setText(String.valueOf(1));
                 btpont2.setText(String.valueOf(1));
             }
