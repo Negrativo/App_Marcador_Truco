@@ -120,22 +120,60 @@ public class marcador_digital extends AppCompatActivity {
             public void onClick(View v) {
                 int bt1;
                 int bt2;
+                int pt1;
+                int pt2;
 
                 bt1 = (Integer.parseInt(btpont1.getText().toString()));//recebendo valor do botao
                 bt2 = (Integer.parseInt(btpont2.getText().toString()));
+                pt1 = (Integer.parseInt(pontos1.getText().toString())); //recebendo valor do ponto
+                pt2 = (Integer.parseInt(pontos2.getText().toString()));
 
-                if (bt1 == 1) { //se o valor for 1 no botao, adiciona apenas +2
+
+                // ifs
+
+                if (pt1 < 11 && pt2 < 11) {
+
+                    if (bt1 == 1) { //se o valor for 1 no botao, adiciona apenas +2
+                        bt1 = bt1 + 2;
+                    } else if (bt1 < 10) {//ultimo funcionamento ate valor 9 do botao, pois adiciona apenas mais uma vez +3
+                        bt1 = bt1 + 3;
+                    } else
+                        bt1 = 1;//apos chegar no valor maximo de truco(12) ele retorna para 1;
+
+
+
+
+                    // ====================================================================================================================================================
+
+                    //if (pt2 <11) {
+
+                    if (bt2 == 1) {
+                        bt2 = bt2 + 2;
+                    } else if (bt2 < 10) {
+                        bt2 = bt2 + 3;
+                    } else
+                        bt2 = 1;
+                    }
+
+
+
+
+
+
+                //}
+               /* if (bt1 == 1) { //se o valor for 1 no botao, adiciona apenas +2
                     bt1 = bt1 + 2;
                 } else if (bt1 < 10) {//ultimo funcionamento ate valor 9 do botao, pois adiciona apenas mais uma vez +3
                     bt1 = bt1 + 3;
                 } else
-                    bt1 = 1;//apos chegar no valor maximo de truco(12) ele retorna para 1;
-                if (bt2 == 1) {
+                    bt1 = 1;//apos chegar no valor maximo de truco(12) ele retorna para 1; */
+
+               /* if (bt2 == 1) {
                     bt2 = bt2 + 2;
                 } else if (bt2 < 10) {
                     bt2 = bt2 + 3;
                 } else
-                    bt2 = 1;
+                    bt2 = 1;*/
 
                 btpont1.setText(String.valueOf(bt1));//passando valor para botao
                 btpont2.setText(String.valueOf(bt2));
