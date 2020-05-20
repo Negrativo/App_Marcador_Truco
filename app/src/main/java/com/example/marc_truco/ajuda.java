@@ -37,7 +37,7 @@ public class ajuda extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent;
-                intent = new Intent(marcador_digital.this, Menu_principal.class);
+                intent = new Intent(ajuda.this, Menu_principal.class);
                 startActivity(intent);
             }
         });

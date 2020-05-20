@@ -33,4 +33,5 @@
     <string name="tutorial_marcdor_fisico">tutorial_marcdor_fisico</string>
     <string name="marcadordetruco">Marcador de truco</string>
     <string name="jls">JLS</string>
+    <string name="rodadas">Rodadas</string>
 </resources>
