@@ -31,4 +31,6 @@
     <string name="ptstentos">clicar na pontuação dos tentos</string>
     <string name="tutorial_marcdor_digital">tutorial_marcdor_digital</string>
     <string name="tutorial_marcdor_fisico">tutorial_marcdor_fisico</string>
+    <string name="marcadordetruco">Marcador de truco</string>
+    <string name="jls">JLS</string>
 </resources>

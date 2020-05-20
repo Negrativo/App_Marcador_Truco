@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -28,9 +30,21 @@ public class ajuda extends AppCompatActivity {
         TextView ajuda = findViewById(R.id.ajuda);
         TextView dimdig = findViewById(R.id.dimdig);
 
+        Button bt_voltar= findViewById(R.id.btn_voltar);
+
+        bt_voltar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(marcador_digital.this, Menu_principal.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menubar, menu);
@@ -41,7 +55,7 @@ public class ajuda extends AppCompatActivity {
         MenuItem marc_dig = findViewById(R.id.marc_dig);
         MenuItem marc_fis = findViewById(R.id.marc_fis);
 
-         */
+
         return true;
     }
 
@@ -65,5 +79,7 @@ public class ajuda extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+     */
 
 }

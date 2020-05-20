@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -23,14 +24,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //criando os botoes da tela
-        //MenuItem trocaM = findViewById(R.id.marc_dig);
+        Button bt_voltar = findViewById(R.id.btn_voltar);
 
+        bt_voltar.setOnClickListener(new View.OnClickListener(){
 
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(MainActivity.this, Menu_principal.class);
+                startActivity(intent);
+            }
+        });
 
 
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {  //para implementar os itens no codigo para manipular
         getMenuInflater().inflate(R.menu.menubar, menu);
 
@@ -43,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-         */
+
 
         return true;
 
@@ -70,5 +79,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+*/
 }

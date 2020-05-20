@@ -18,12 +18,15 @@ public class marcador_digital extends AppCompatActivity {
     // declarando os widgets da tela que serao manipulados
     private Button btpont1;
     private Button btpont2;
+    private Button bt_voltar;
 
     private EditText pontos1;
     private EditText pontos2;
 
     private TextView tentos1;
     private TextView tentos2;
+
+
 
     /*private int total1;
     private int total2;
@@ -46,6 +49,7 @@ public class marcador_digital extends AppCompatActivity {
         Button btmenos1 = findViewById(R.id.bt_menos1);
         Button btmenos2 = findViewById(R.id.bt_menos2);
         Button bt_truco = findViewById(R.id.bt_truco);
+        Button bt_voltar= findViewById(R.id.btn_voltar);
         pontos1 = findViewById(R.id.pontos1);
         pontos2 = findViewById(R.id.pontos2);
         tentos1 = findViewById(R.id.tentos1);
@@ -206,6 +210,17 @@ public class marcador_digital extends AppCompatActivity {
             }
         });
 
+        bt_voltar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(marcador_digital.this, Menu_principal.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
         /*
@@ -226,7 +241,8 @@ public class marcador_digital extends AppCompatActivity {
     }
 
 
-
+    //desconsiderando barra de menu
+    /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menubar, menu);
@@ -237,7 +253,7 @@ public class marcador_digital extends AppCompatActivity {
         MenuItem marc_dig = findViewById(R.id.marc_dig);
         MenuItem marc_fis = findViewById(R.id.marc_fis);
 
-         */
+
             return true;
     }
 
@@ -262,6 +278,6 @@ public class marcador_digital extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
+    */
 
 }

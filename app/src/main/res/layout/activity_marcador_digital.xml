@@ -188,4 +188,15 @@
         app:layout_constraintStart_toEndOf="@+id/tentos1"
         app:layout_constraintTop_toBottomOf="@+id/marca_truco" />
 
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
