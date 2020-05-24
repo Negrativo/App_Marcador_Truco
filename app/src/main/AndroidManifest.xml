@@ -13,20 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="HardcodedDebugMode">
-        <activity android:name=".Menu_principal">
+        <activity android:name=".activity_splash_screen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+            <category android:name="android.intent.category.LAUNCHER" />
 
-                <action android:name="android.intent.action.VIEW" />
+            <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
+        <activity android:name=".Menu_principal"/>
         <activity android:name=".ajuda" />
         <activity android:name=".Creditos" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".marcador_digital">
-        </activity>
+        <activity android:name=".marcador_digital"></activity>
     </application>
 
 </manifest>
