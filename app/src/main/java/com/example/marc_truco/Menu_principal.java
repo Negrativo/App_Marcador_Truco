@@ -37,7 +37,7 @@ public class Menu_principal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent2;
-                intent2 = new Intent(Menu_principal.this, MainActivity.class);
+                intent2 = new Intent(Menu_principal.this, Marcador_fisico.class);
                 startActivity(intent2);
             }
         });

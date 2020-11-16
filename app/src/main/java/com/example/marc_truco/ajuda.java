@@ -36,9 +36,7 @@ public class ajuda extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent;
-                intent = new Intent(ajuda.this, Menu_principal.class);
-                startActivity(intent);
+                finish();
             }
         });
 

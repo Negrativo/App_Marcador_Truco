@@ -59,6 +59,12 @@ public class marcador_digital extends AppCompatActivity {
 
         //só commitando pra fala que tenho commit aqui, coommit 2
 
+        bt_voltar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               finish();
+            }
+        });
 
         //adicionando função ao botao de pontuação para time 1
         btpont1.setOnClickListener(new View.OnClickListener() {
@@ -209,18 +215,6 @@ public class marcador_digital extends AppCompatActivity {
                 pontos2.setText(String.valueOf(val));
             }
         });
-
-        bt_voltar.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                Intent intent;
-                intent = new Intent(marcador_digital.this, Menu_principal.class);
-                startActivity(intent);
-            }
-        });
-
-
 
 
         /*

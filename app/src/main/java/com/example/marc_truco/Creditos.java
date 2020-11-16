@@ -35,7 +35,7 @@ public class Creditos extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.marc_fis:
-                Intent intent1 = new Intent(this, MainActivity.class);
+                Intent intent1 = new Intent(this, Marcador_fisico.class);
                 this.startActivity(intent1);
                 break;
             case R.id.marc_dig:
